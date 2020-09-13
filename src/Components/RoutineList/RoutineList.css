@@ -1,0 +1,105 @@
+.Routinelist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    width: 43%;
+    max-height: 950px;
+    padding: 2.27rem 1.16rem;
+    background-color: rgba(24, 78, 72,0.8);
+    border-radius:5px;
+  }
+  
+  .Routinelist input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55rem;
+    color: #fff;
+  }
+  .timeText {
+    padding-top: 1em;
+    color:white;
+  }
+
+  .timeText span {
+    color: rgb(255, 201, 30);
+  }
+  .Routine-save {
+    cursor: pointer;
+    width: 10rem;
+    padding: .77rem 0;
+    border-radius: 54px;
+    border-width: 0px;
+    margin-top: 1.27rem;
+    background-color: #9C8428;
+    text-align: center;
+    font-size: .83rem;
+    transition: background-color .25s;
+    color: #fff;
+    font-weight: 500;
+  }
+  .Routine-reset {
+    cursor: pointer;
+    width: 8rem;
+    padding: .77rem 0;
+    border-radius: 54px;
+    border-width: 0px;
+    margin-top: 1.27rem;
+    background-color: rgba(156, 134, 60, 0.7);
+    text-align: center;
+    font-size: .53rem;
+    transition: background-color .25s;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .Routine-save:hover {
+    background-color: rgba(255, 201, 30, .7);
+  }
+  
+  .Routine-reset:hover {
+    background-color: rgba(252, 236, 186, 0.7);
+  }
+
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+  
+  @media only screen and (max-width: 1020px) {
+    .Routinelist {
+      width: 90%;
+    }
+  }
+
+  @media only print {
+    .Print-Style {
+      width: 100%;
+      text-align: center;
+      color:black;
+    }
+    .Print-Style input {
+      padding-top:30px;
+      padding-bottom:30px;
+      background-color:rgba(24, 78, 72,0.8);
+      color:white;
+      font-size: 2em;
+      width:100%;
+      text-align: center;
+      border:none;
+    }
+    .timeText {
+      color: rgba(24, 78, 72,0.8);
+      font-size: 1.2em;
+      text-align: center;
+      width:100%;
+    }
+
+    .timeText span {
+      color: rgb(255, 201, 30);
+    }
+  }
